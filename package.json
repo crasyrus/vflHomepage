@@ -1,0 +1,11 @@
+{
+  "name": "vflgrafenwald",
+  "version": "1.0.0",
+  "keywords": ["util", "functional", "server", "client", "browser"],
+  "author": "Klaus",
+  "contributors": [],
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-responsive": "2.6.0"
+  }
+}

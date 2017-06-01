@@ -1,0 +1,18 @@
+<md-content layout="row" layout-padding>
+  <md-list>
+    <md-subheader class="md-no-sticky">News</md-subheader>
+    <md-list-item  ng-repeat="n in news" ng-click="selectNews(n)">
+      <div class="md-list-item-text">{{n.headline}}</div>
+      <sw-icon iconset="action" icon="delete" ng-click="delete(n)" aria-label="News löschen" class="md-secondary md-hue-3"></sw-icon>
+    </md-list-item>
+  </md-list>
+
+  <form name="newsForm" ng-submit="save()">
+    <md-input-container>
+      <label>Überschrift</label>
+      <input ng-model="editNews.headline" required>
+    </md-input-container>
+    <textarea ui-tinymce="tinymceOptions" ng-model="editNews.text"></textarea>
+    <button type="submit" class='md-butten md-ink-ripple md-primary md-raised'>Speichern</button>
+  </form>
+</md-content>

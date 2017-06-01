@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="org.springframework_gs-spring-boot_jar_0.1.0PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>de.siewares.springboottest.entity.Player</class>
+    <class>de.siewares.springboottest.entity.Trainingtime</class>
+    <class>de.siewares.springboottest.entity.Team</class>
+    <class>de.siewares.springboottest.entity.Goal</class>
+    <class>de.siewares.springboottest.entity.Club</class>
+    <class>de.siewares.springboottest.entity.Match</class>
+    <class>de.siewares.springboottest.entity.TrainerTeam</class>
+    <class>de.siewares.springboottest.entity.Trainer</class>
+    <class>de.siewares.springboottest.entity.Management</class>
+    <class>de.siewares.springboottest.entity.Category</class>
+    <class>de.siewares.springboottest.entity.News</class>
+    <class>de.siewares.springboottest.entity.User</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/vflnew"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>

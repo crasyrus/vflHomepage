@@ -1,0 +1,25 @@
+<md-dialog ng-keypress="keyPress($event)">
+  <md-toolbar class="md-hue-1">
+    <div class="md-toolbar-tools">
+      <h2>{{title}}</h2>
+      <span flex></span>
+      <md-button ng-show="closeable" class="md-icon-button" ng-click="cancel()">
+        <sw-icon iconset="navigation" icon="close"></sw-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-dialog-content>
+    <div class="md-dialog-content" ng-include="dlgTemplate">
+
+    </div>
+  </md-dialog-content>
+  <md-dialog-actions>
+    
+  </md-dialog-actions>
+  <!--div class="md-actions" ng-show="actionsAvailable" layout="row">
+    <md-button ng-repeat="(name, action) in actions " ng-click="action.exe()" ng-disabled="action.disabled" style="height: 90%" ng-class="action.class">
+      <cel-icon ng-if="action.icon" iconset="{{action.iconset}}" icon="{{action.icon}}"></cel-icon>
+      <div translate="{{action.name}}" style="font-size: 12px"></div>
+    </md-button>
+  </div-->
+</md-dialog>
